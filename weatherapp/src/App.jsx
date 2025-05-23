@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { FaCloudSun } from "react-icons/fa";
 
 const App = () => {
   const [City, setCity] = useState("");
@@ -27,7 +27,7 @@ const App = () => {
   return (
     <div className='container'>
       <div className='main fade-in'>
-        <h1>WeatherApp</h1>
+        <h1>WeatherApp <FaCloudSun /></h1>
         <form onSubmit={handlerSubmit}>
           <input
             type="text"
